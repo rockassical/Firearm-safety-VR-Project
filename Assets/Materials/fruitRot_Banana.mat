@@ -36,6 +36,10 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _moldTexture:
+        m_Texture: {fileID: 2800000, guid: 53a1b48d2be7a1343a1ea42fb24a1ccb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _texture:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
