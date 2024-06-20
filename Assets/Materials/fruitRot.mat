@@ -60,10 +60,10 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _moldScale: 25.77
-    - _moldStepA: 0.183
-    - _moldStepB: 0.43
-    - _moldStrength: 0
+    - _moldScale: 27
+    - _moldStepA: 0
+    - _moldStepB: 0.623
+    - _moldStrength: 41.5
     m_Colors:
     - _moldColor: {r: 0.8773585, g: 0.85407954, b: 0.8152813, a: 1}
     - _textureColor: {r: 1, g: 1, b: 1, a: 0}

@@ -60,11 +60,11 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _moldScale: 297.6
-    - _moldStepA: 0.4
-    - _moldStepB: 0.38
-    - _moldStrength: 1
+    - _moldScale: 278.68
+    - _moldStepA: 0.146
+    - _moldStepB: 0.592
+    - _moldStrength: -1.2
     m_Colors:
-    - _moldColor: {r: 0.5377358, g: 0.37109298, b: 0.21644709, a: 1}
+    - _moldColor: {r: 0.5660378, g: 0.511197, b: 0.4352083, a: 1}
     - _textureColor: {r: 0.9716981, g: 0.96142566, b: 0.02444516, a: 1}
   m_BuildTextureStacks: []
