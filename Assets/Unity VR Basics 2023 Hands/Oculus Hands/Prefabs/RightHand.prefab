@@ -329,6 +329,7 @@ GameObject:
   - component: {fileID: 3240524871626806228}
   - component: {fileID: 3240524871636401154}
   - component: {fileID: 6751022142584214985}
+  - component: {fileID: 4758423192954032197}
   m_Layer: 0
   m_Name: RightHand
   m_TagString: Untagged
@@ -388,6 +389,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gripInputActionRef: {fileID: -1758520528963094988, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   triggerInputActionRef: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
+--- !u!114 &4758423192954032197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3240524871627034548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c58faf675460ca84b843770cb149e8b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PokeAttachPoint: {fileID: 3240524871626806254}
 --- !u!1 &3240524871627034550
 GameObject:
   m_ObjectHideFlags: 0
