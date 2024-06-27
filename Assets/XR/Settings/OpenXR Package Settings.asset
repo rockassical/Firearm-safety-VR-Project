@@ -303,11 +303,6 @@ MonoBehaviour:
   - {fileID: -5321201147862078602}
   - {fileID: -4859949929534125181}
   - {fileID: -8897029768964373518}
-  - {fileID: -9110112334664970683}
-  - {fileID: 3013472319833269005}
-  - {fileID: -3732387690860035580}
-  - {fileID: -2364961108332736463}
-  - {fileID: -8440341615742098630}
   - {fileID: 630453722059636259}
   - {fileID: 5354527799326938366}
   - {fileID: -1322027350951475159}
@@ -348,7 +343,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f647cc0545697264a9878224faada6d5, type: 3}
   m_Name: MetaQuestFeature Android
   m_EditorClassIdentifier: 
-  m_enabled: 0
+  m_enabled: 1
   nameUi: Meta Quest Support
   version: 1.0.0
   featureIdInternal: com.unity.openxr.feature.metaquest
@@ -744,10 +739,6 @@ MonoBehaviour:
   - {fileID: -166151207014376100}
   - {fileID: 483881704057018666}
   - {fileID: 638462042371568391}
-  - {fileID: 4586518195640819137}
-  - {fileID: -9041147201299809190}
-  - {fileID: -6815523588358990585}
-  - {fileID: 4199280556795020161}
   - {fileID: 3200837420168238363}
   - {fileID: -4882272605543901244}
   - {fileID: 6954259889890841358}
