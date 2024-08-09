@@ -191,6 +191,7 @@ MonoBehaviour:
   m_InteractionManager: {fileID: 0}
   m_Colliders:
   - {fileID: 6031785885678163047}
+  - {fileID: 0}
   m_InteractionLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -363,7 +364,7 @@ Transform:
   m_Children:
   - {fileID: 7526604691064374691}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!33 &5936307561234844406
 MeshFilter:
@@ -393,7 +394,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 853afecbba3056b4a8943c1edbd9f34d, type: 2}
+  - {fileID: 2100000, guid: 82908c56d4c45ec4c8ceb640f36e1266, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -534,8 +535,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8170721706590498896}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.897, y: 1.21, z: -0.129}
-  m_LocalScale: {x: 0.2186294, y: 0.0549928, z: 0.07436992}
+  m_LocalPosition: {x: 0.897, y: 1.21, z: -0.00013018}
+  m_LocalScale: {x: 0.2186294, y: 0.0549928, z: 0.28219232}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2887630032385153157}
@@ -610,5 +611,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.0495354, y: 1.2642304, z: 4.3856416}
-  m_Center: {x: -0.02476777, y: 0.13211541, z: 1.6928146}
+  m_Size: {x: 1.0495354, y: 1.2642304, z: 1.024866}
+  m_Center: {x: -0.02476777, y: 0.13211541, z: 0.012422482}
