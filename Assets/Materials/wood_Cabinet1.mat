@@ -24,7 +24,9 @@ Material:
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 2100000, guid: 82908c56d4c45ec4c8ceb640f36e1266, type: 2}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
+  m_ValidKeywords:
+  - _ENVIRONMENTREFLECTIONS_OFF
+  - _SPECULARHIGHLIGHTS_OFF
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -38,7 +40,9 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _EnvironmentReflections: 0
+    - _SpecularHighlights: 0
     m_Colors:
     - _BaseColor: {r: 0.9529412, g: 0.8, b: 0.65882355, a: 1}
     - _Color: {r: 0.9529411, g: 0.8, b: 0.65882355, a: 1}
