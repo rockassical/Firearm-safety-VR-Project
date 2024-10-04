@@ -7,11 +7,10 @@ public class TVOnOff : MonoBehaviour
     private bool tvPower = true;
     [SerializeField]
     private GameObject tvScreen;
-    public 
-        void turnOnOff()
+    public void turnOnOff()
     {
         tvPower = !tvPower;
-        if (tvPower)
+        if (tvPower == true)
         {
             tvScreen.SetActive(true);
         }
