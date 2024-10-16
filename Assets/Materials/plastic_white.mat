@@ -31,7 +31,7 @@ Material:
     m_Floats:
     - _Metallic: 0.016
     - _ReceiveShadows: 0
-    - _Smoothness: 0.575
+    - _Smoothness: 0.91
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
