@@ -5138,7 +5138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1482978205784326308, guid: 80facb2480b02204d9042f71ed344c20, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1565837041777351320, guid: 80facb2480b02204d9042f71ed344c20, type: 3}
       propertyPath: m_LocalScale.x
@@ -5198,11 +5198,11 @@ PrefabInstance:
       objectReference: {fileID: 1311866462}
     - target: {fileID: 8875408677322246154, guid: 80facb2480b02204d9042f71ed344c20, type: 3}
       propertyPath: OnPlace.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8875408677322246154, guid: 80facb2480b02204d9042f71ed344c20, type: 3}
       propertyPath: OnRemove.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8875408677322246154, guid: 80facb2480b02204d9042f71ed344c20, type: 3}
       propertyPath: OnPlace.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5292,11 +5292,6 @@ Transform:
 --- !u!23 &328683138 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 7745312094893812193, guid: 80facb2480b02204d9042f71ed344c20, type: 3}
-  m_PrefabInstance: {fileID: 328683136}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &328683139 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1482978205784326308, guid: 80facb2480b02204d9042f71ed344c20, type: 3}
   m_PrefabInstance: {fileID: 328683136}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &337418140
@@ -11091,7 +11086,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 328683139}
+      - m_Target: {fileID: 424633438}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -11118,13 +11113,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 328683139}
+      - m_Target: {fileID: 424633438}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -17838,7 +17833,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   OnRemove:
     m_PersistentCalls:
@@ -17865,7 +17860,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
   OnHighlight:
     m_PersistentCalls:
@@ -19464,7 +19459,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -25144,7 +25139,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
   OnRemove:
     m_PersistentCalls:
@@ -25171,7 +25166,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
   OnHighlight:
     m_PersistentCalls:
@@ -47339,6 +47334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: kitchenMicrowave
       objectReference: {fileID: 0}
+    - target: {fileID: 2784413422431336836, guid: 8b0b2a7523c425d43a32db921c18c809, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 35a711cb34eace54bbba5fd1d8be9494, type: 2}
     - target: {fileID: 3179897057593795350, guid: 8b0b2a7523c425d43a32db921c18c809, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -53746,10 +53745,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cup_Interactable
       objectReference: {fileID: 0}
-    - target: {fileID: 9223302144192399476, guid: f91d819b50665a4448bf0611135e148f, type: 3}
-      propertyPath: m_RootOrder
-      value: -1
-      objectReference: {fileID: 0}
+    - target: {fileID: 4372493619431521598, guid: f91d819b50665a4448bf0611135e148f, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b469fa3114ff76a4f94774f1017c57f8, type: 2}
     - target: {fileID: 9223302144192399476, guid: f91d819b50665a4448bf0611135e148f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.595
@@ -57157,6 +57156,7 @@ GameObject:
   - component: {fileID: 8969825701119232915}
   - component: {fileID: 8969825701119232919}
   - component: {fileID: 8969825701119232918}
+  - component: {fileID: 8969825701119232920}
   m_Layer: 0
   m_Name: ToyCar
   m_TagString: Toy
@@ -60997,7 +60997,7 @@ Transform:
   m_GameObject: {fileID: 8384094797494445381}
   serializedVersion: 2
   m_LocalRotation: {x: -0.16505235, y: 0.4898772, z: -0.6934241, w: 0.5019373}
-  m_LocalPosition: {x: -3.057, y: 0.098, z: -6.972}
+  m_LocalPosition: {x: -3.057, y: 0.157, z: -6.972}
   m_LocalScale: {x: 0.7445788, y: 0.74457884, z: 0.74457884}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -61178,7 +61178,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
@@ -61201,8 +61201,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.31328252, y: 0.76872486, z: 0.24974373}
-  m_Center: {x: -0.00000023841858, y: -0.000000059604645, z: 0}
+  m_Size: {x: 0.29694209, y: 0.77076733, z: 0.24974374}
+  m_Center: {x: 0.0016813314, y: -0.0010210166, z: -1.4679622e-11}
 --- !u!114 &8969825701119232918
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61308,6 +61308,28 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   lockHandOnGrab: 0
+--- !u!64 &8969825701119232920
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8384094797494445381}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 0
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 527962735512037890, guid: e4c34bb2eea56f240b7a36aab948ace2, type: 3}
 --- !u!4 &8971271131729882301
 Transform:
   m_ObjectHideFlags: 0
