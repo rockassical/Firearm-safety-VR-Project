@@ -20,38 +20,44 @@ public class RopeGenerator : MonoBehaviour
         for (int i = 0; i < segmentCount; i++)
         {
             GameObject segment = Instantiate(ropeSegmentPrefab, segmentPosition,
-           Quaternion.identity);
+           Quaternion.identity, this.transform);
+            segment.name = "RopeSegment" + i.ToString();
             Rigidbody rb = segment.GetComponent<Rigidbody>();
             // Link each segment with a ConfigurableJoint
             if (previousSegment != null)
             {
-                ConfigurableJoint joint = segment.AddComponent<ConfigurableJoint>();
+                ConfigurableJoint joint = segment.GetComponent<ConfigurableJoint>();
                 joint.connectedBody = previousSegment.GetComponent<Rigidbody>();
                 joint.autoConfigureConnectedAnchor = false;
                 joint.anchor = Vector3.zero;
                 joint.connectedAnchor = new Vector3(0, -segmentLength, 0);
                 // Adjust joint settings for flexibility
-                joint.xMotion = ConfigurableJointMotion.Locked;
+                joint.xMotion = ConfigurableJointMotion.Limited;
                 joint.yMotion = ConfigurableJointMotion.Limited;
-                joint.zMotion = ConfigurableJointMotion.Locked;
+                joint.zMotion = ConfigurableJointMotion.Limited;
+                Debug.Log("Joint Motions set for segment " + i);
                 joint.angularXMotion = ConfigurableJointMotion.Limited;
                 joint.angularYMotion = ConfigurableJointMotion.Limited;
                 joint.angularZMotion = ConfigurableJointMotion.Limited;
+                // Tune ConfigurableJoint Properties
+                joint.linearLimit = new SoftJointLimit() { limit = segmentLength * 0.8f, bounciness = 0.1f };
+                joint.linearLimitSpring = new SoftJointLimitSpring() { spring = 50, damper = 1 };
+                joint.angularYZLimitSpring = new SoftJointLimitSpring() { spring = 50, damper = 1 };
+                joint.angularXLimitSpring = new SoftJointLimitSpring() { spring = 50, damper = 1 };
 
             }
             else
             {
                 // Attach the first segment to the start point
                 segment.transform.position = startPoint.position;
-                segment.GetComponent<ConfigurableJoint>().connectedBody =
-               startPoint.GetComponent<Rigidbody>();
+                segment.GetComponent<ConfigurableJoint>().connectedBody = startPoint.GetComponent<Rigidbody>();
             }
             // Update position for next segment
             segmentPosition -= transform.up * segmentLength;
             previousSegment = segment;
+            Debug.Log("Previous Segment set to: " + segment.ToString());
         }
         // Attach last segment to the end point
-        previousSegment.GetComponent<ConfigurableJoint>().connectedBody =
-       endPoint.GetComponent<Rigidbody>();
+        //previousSegment.GetComponent<ConfigurableJoint>().connectedBody = endPoint.GetComponent<Rigidbody>();
     }
 }

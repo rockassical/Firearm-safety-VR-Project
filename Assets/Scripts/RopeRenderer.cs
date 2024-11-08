@@ -6,6 +6,8 @@ public class RopeRenderer : MonoBehaviour
 {
     private LineRenderer lineRenderer;
     private List<Transform> segmentPositions = new List<Transform>();
+    private List<Rigidbody> ropeSegments = new List<Rigidbody>();
+    [SerializeField] private float gravityScale = 0.1f;
     private void Start()
     {
         lineRenderer = GetComponent<LineRenderer>();
