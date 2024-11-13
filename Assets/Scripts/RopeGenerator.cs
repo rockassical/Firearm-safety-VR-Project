@@ -21,7 +21,7 @@ public class RopeGenerator : MonoBehaviour
         {
             GameObject segment = Instantiate(ropeSegmentPrefab, segmentPosition,
            Quaternion.identity, this.transform);
-            segment.name = "RopeSegment" + i.ToString();
+            segment.name = "RopeSegment" + i.ToString(); //RENAME ROPE SEGEMENT
             Rigidbody rb = segment.GetComponent<Rigidbody>();
             // Link each segment with a ConfigurableJoint
             if (previousSegment != null)
@@ -51,6 +51,7 @@ public class RopeGenerator : MonoBehaviour
                 // Attach the first segment to the start point
                 segment.transform.position = startPoint.position;
                 segment.GetComponent<ConfigurableJoint>().connectedBody = startPoint.GetComponent<Rigidbody>();
+                segment.GetComponent<Rigidbody>().isKinematic = true;
             }
             // Update position for next segment
             segmentPosition -= transform.up * segmentLength;
@@ -58,6 +59,7 @@ public class RopeGenerator : MonoBehaviour
             Debug.Log("Previous Segment set to: " + segment.ToString());
         }
         // Attach last segment to the end point
+        previousSegment.GetComponent<MeshRenderer>().enabled = true;
         //previousSegment.GetComponent<ConfigurableJoint>().connectedBody = endPoint.GetComponent<Rigidbody>();
     }
 }
