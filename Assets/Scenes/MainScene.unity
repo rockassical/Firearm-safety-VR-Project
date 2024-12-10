@@ -4074,6 +4074,28 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
+--- !u!64 &258594685
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 553136753}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1897389733928533576, guid: c57e8540793346c44a598f09111a187f, type: 3}
 --- !u!1001 &265999504
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7233,6 +7255,11 @@ MonoBehaviour:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6802311781355306046, guid: 724e387759115a147b931f3e043f4507, type: 3}
   m_PrefabInstance: {fileID: 38716224989628100}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &553136753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4011305752482112176, guid: 896f884354aeb35488aa036465428115, type: 3}
+  m_PrefabInstance: {fileID: 8479657233475431678}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &553493519
 GameObject:
@@ -19387,7 +19414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1148035951
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28661,18 +28688,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2075121141}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
   OnRemove:
     m_PersistentCalls:
       m_Calls: []
@@ -32577,7 +32592,7 @@ MonoBehaviour:
   placeNames: []
   blacklistNames: []
   onlyAllows:
-  - {fileID: 8265211357639555856}
+  - {fileID: 3469287837815836500}
   dontAllows: []
   placeLayers:
     serializedVersion: 2
@@ -33845,6 +33860,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 2075121141}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
   OnHighlight:
     m_PersistentCalls:
@@ -40185,7 +40212,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &2072162366953890247
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -55831,7 +55858,7 @@ MonoBehaviour:
   jointBreakForce: 6000
   showAdvancedSettings: 1
   makeChildrenGrabbable: 1
-  grabPriorityWeight: 1.5
+  grabPriorityWeight: 1
   ignoreReleaseTime: 0.5
   minHeldDrag: 1.5
   minHeldAngleDrag: 3
@@ -58119,7 +58146,7 @@ MonoBehaviour:
   jointBreakForce: 6000
   showAdvancedSettings: 1
   makeChildrenGrabbable: 1
-  grabPriorityWeight: 1
+  grabPriorityWeight: 1.5
   ignoreReleaseTime: 0.5
   minHeldDrag: 1.5
   minHeldAngleDrag: 3
@@ -61143,6 +61170,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4011305752482112176, guid: 896f884354aeb35488aa036465428115, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 258594685}
     - targetCorrespondingSourceObject: {fileID: 6229332097603467224, guid: 896f884354aeb35488aa036465428115, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8479657233475431685}
@@ -64640,7 +64670,7 @@ Rigidbody:
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 2
