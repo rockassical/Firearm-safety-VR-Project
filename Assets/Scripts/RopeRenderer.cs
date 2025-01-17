@@ -15,7 +15,15 @@ public class RopeRenderer : MonoBehaviour
         foreach (Transform child in transform)
         {
             if (child.CompareTag("RopeSegment"))
+            {
                 segmentPositions.Add(child);
+                Debug.Log("Added "+ child.name + " segment position");
+            }
+            else
+            {
+                Debug.Log("Failed");
+            }
+                
         }
         // Set the LineRenderer vertex count
         lineRenderer.positionCount = segmentPositions.Count;

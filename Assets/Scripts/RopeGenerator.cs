@@ -9,7 +9,7 @@ public class RopeGenerator : MonoBehaviour
     public Transform endPoint; // End anchor point
     public int segmentCount = 10; // Number of segments
     public float segmentLength = 0.5f; // Length of each segment
-    private void Start()
+    private void Awake()
     {
         GenerateRope();
     }
