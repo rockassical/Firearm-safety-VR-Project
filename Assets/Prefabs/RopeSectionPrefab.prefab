@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9211000824183055750}
   - component: {fileID: 8975870370961393819}
   - component: {fileID: 859189218094761313}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: RopeSectionPrefab
   m_TagString: RopeSegment
   m_Icon: {fileID: 0}
