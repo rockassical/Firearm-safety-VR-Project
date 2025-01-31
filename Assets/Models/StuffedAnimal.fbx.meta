@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 39080eae801e05f4d84b222cc6fbc5aa
+guid: 2da439da30b4e5a4da8285985c04cede
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Blanket
-    second: {fileID: 2100000, guid: 4f249afda0d7a6b4f971794199b101bc, type: 2}
+      name: stuffedAnimal
+    second: {fileID: 2100000, guid: cf87d6e4c1e1f324f8df8d1169a2cd05, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -40,7 +40,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.33333334
+    globalScale: 0.5
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -95,7 +95,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.0033333334
+    globalScale: 0.005
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
