@@ -63,7 +63,7 @@ MonoBehaviour:
   resizeOnPlace: 0
   resizeOffset: -0.02
   disableRigidbodyOnPlace: 0
-  disableGrabOnPlace: 0
+  disableGrabOnPlace: 1
   disablePlacePointOnPlace: 0
   destroyObjectOnPlace: 0
   makePlacedKinematic: 1
