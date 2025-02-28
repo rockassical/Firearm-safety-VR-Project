@@ -852,7 +852,7 @@ MonoBehaviour:
   resizeOnPlace: 0
   resizeOffset: -0.02
   disableRigidbodyOnPlace: 0
-  disableGrabOnPlace: 0
+  disableGrabOnPlace: 1
   disablePlacePointOnPlace: 0
   destroyObjectOnPlace: 0
   makePlacedKinematic: 1
@@ -877,6 +877,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.Renderer, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AreaCompletionTracking, Assembly-CSharp
+        m_MethodName: TaskCompleted
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
