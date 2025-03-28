@@ -9,6 +9,7 @@ TagManager:
   - Toy
   - RopeSegment
   - BlindStop
+  - TutorialPiece
   layers:
   - Default
   - TransparentFX
