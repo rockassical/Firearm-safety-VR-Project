@@ -65,6 +65,6 @@ Material:
     - _moldStepB: 0.592
     - _moldStrength: -1.2
     m_Colors:
-    - _moldColor: {r: 0.5660378, g: 0.511197, b: 0.4352083, a: 1}
-    - _textureColor: {r: 0.9716981, g: 0.96142566, b: 0.02444516, a: 1}
+    - _moldColor: {r: 0.3773585, g: 0.25728992, b: 0.094339624, a: 1}
+    - _textureColor: {r: 1, g: 0.8018225, b: 0.1462264, a: 1}
   m_BuildTextureStacks: []
