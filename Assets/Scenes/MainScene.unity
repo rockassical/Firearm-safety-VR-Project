@@ -1540,6 +1540,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToyPlacePoint (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4103267147160286205, guid: 0fe980673a9d4db4bac0016a69f6bf7d, type: 3}
+      propertyPath: disableGrabOnPlace
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -28897,6 +28901,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToyPlacePoint (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4103267147160286205, guid: 0fe980673a9d4db4bac0016a69f6bf7d, type: 3}
+      propertyPath: disableGrabOnPlace
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -50127,6 +50135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToyPlacePoint (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4103267147160286205, guid: 0fe980673a9d4db4bac0016a69f6bf7d, type: 3}
+      propertyPath: disableGrabOnPlace
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51249,6 +51261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ToyPlacePoint (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4103267147160286205, guid: 0fe980673a9d4db4bac0016a69f6bf7d, type: 3}
+      propertyPath: disableGrabOnPlace
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51681,6 +51697,10 @@ PrefabInstance:
       propertyPath: placedOffset
       value: 
       objectReference: {fileID: 3588214730677272782}
+    - target: {fileID: 4103267147160286205, guid: 0fe980673a9d4db4bac0016a69f6bf7d, type: 3}
+      propertyPath: disableGrabOnPlace
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6127346214569586348, guid: 0fe980673a9d4db4bac0016a69f6bf7d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.0517305
