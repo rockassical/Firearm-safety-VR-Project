@@ -23,13 +23,13 @@ Material:
   m_Name: Blanket Variant
   m_Shader: {fileID: 4800000, guid: 933532a4fcc9baf4fa0491de14d08ed7, type: 3}
   m_Parent: {fileID: 2100000, guid: 4f249afda0d7a6b4f971794199b101bc, type: 2}
-  m_ModifiedSerializedProperties: 0
+  m_ModifiedSerializedProperties: 8
   m_ValidKeywords:
   - _ALPHATEST_ON
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap:
     RenderType: TransparentCutout
@@ -39,7 +39,8 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Ints: []
-    m_Floats: []
+    m_Floats:
+    - _Cull: 0
     m_Colors:
     - _BaseColor: {r: 1, g: 0.38559586, b: 0.3537736, a: 1}
     - _Color: {r: 1, g: 0.38559583, b: 0.35377356, a: 1}
