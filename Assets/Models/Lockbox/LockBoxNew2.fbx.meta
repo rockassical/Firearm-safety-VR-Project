@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 9444cee4503a6754e9a56f69e38dfc19
+guid: 39e845f88e5303a49ba2ad7a2e968cfe
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: LockBoxTexture.png
+    second: {fileID: 2100000, guid: eda03bf49cf3e3248885b9900bce90db, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -35,7 +40,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.3
+    globalScale: 0.375
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -90,7 +95,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.3
+    globalScale: 0.375
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0

@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: 9444cee4503a6754e9a56f69e38dfc19
+guid: 92746d9adb17ac945a772505ba7afc70
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: buttonBatteriesNew
+    second: {fileID: 2100000, guid: 6783524bcb8bb474bb0f48d1469c0b54, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -90,7 +95,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.3
+    globalScale: 0.003
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
