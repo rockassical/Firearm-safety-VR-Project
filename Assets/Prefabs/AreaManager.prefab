@@ -284,3 +284,9 @@ MonoBehaviour:
   areaName: Kitchen
   numOfTasks: 3
   scoreText: {fileID: 6146739411097032588}
+  allHazardsFound:
+    m_PersistentCalls:
+      m_Calls: []
+  skipRoom:
+    m_PersistentCalls:
+      m_Calls: []
