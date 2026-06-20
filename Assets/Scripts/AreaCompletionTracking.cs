@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -15,6 +16,9 @@ public class AreaCompletionTracking : MonoBehaviour
     private bool tasksCompleted = false;
     public UnityEvent allHazardsFound;
     public UnityEvent skipRoom;
+    public List<GameObject> activeHazards = new List<GameObject>();
+    private WaitForSeconds wait90Seconds = new WaitForSeconds(90f);
+
     // Start is called before the first frame update
     private void Awake()
     {
@@ -47,16 +51,18 @@ public class AreaCompletionTracking : MonoBehaviour
         {
             scoreText.text = areaName.ToString() + ": All Hazards in Area Resolved";
             allHazardsFound.Invoke();
-            StopCoroutine(RoomTimer());
+            StopAllCoroutines();
             return;
         }
         scoreText.text = areaName.ToString() + ": " + numOfTasksCompleted.ToString() + "/" + numOfTasks.ToString() + " Hazards Resolved";
        
 
     }
-    public void StartRoomTimer()
+    //starts timers (THIS WILL BE CALLED VIA BUTTON PRESS EVENT OF THE AREA START PANELS)
+    public void StartRoomTimers()
     {
         StartCoroutine(RoomTimer());
+        StartCoroutine(HintTimer());
     }
     IEnumerator RoomTimer()
     {
@@ -65,6 +71,34 @@ public class AreaCompletionTracking : MonoBehaviour
         if (tasksCompleted != true)
         {
             skipRoom.Invoke();
+        }
+    }
+    //Hint timer (hint is given every 90 seconds)
+    IEnumerator HintTimer()
+    {
+        //hintAudioSource will be used to keep track of the audio source of the first remaining hazard in the area.
+        AudioSource hintAudioSource;
+        while (tasksCompleted != true)
+        {
+            yield return wait90Seconds;
+            hintAudioSource = activeHazards[0].GetComponent<AudioSource>();
+            if (hintAudioSource != null)
+            {
+                hintAudioSource.Play();
+            }
+        }
+    }
+
+    public void removeHazard(GameObject completedHazard)
+    {
+        foreach(GameObject hazard in activeHazards)
+        {
+            if (hazard == completedHazard)
+            {
+                activeHazards.Remove(hazard);
+                Debug.Log(hazard.name + " completed and removed from "+ this.gameObject.name + " activeHazards list");
+                break;
+            }
         }
     }
 }
