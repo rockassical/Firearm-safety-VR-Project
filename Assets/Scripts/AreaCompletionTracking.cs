@@ -16,8 +16,10 @@ public class AreaCompletionTracking : MonoBehaviour
     private bool tasksCompleted = false;
     public UnityEvent allHazardsFound;
     public UnityEvent skipRoom;
+    [Header("Hazard Tracking")]
     public List<GameObject> activeHazards = new List<GameObject>();
     private WaitForSeconds wait90Seconds = new WaitForSeconds(90f);
+    private AudioSource hintAudioSource;
 
     // Start is called before the first frame update
     private void Awake()
@@ -77,10 +79,10 @@ public class AreaCompletionTracking : MonoBehaviour
     IEnumerator HintTimer()
     {
         //hintAudioSource will be used to keep track of the audio source of the first remaining hazard in the area.
-        AudioSource hintAudioSource;
         while (tasksCompleted != true)
         {
             yield return wait90Seconds;
+            Debug.Log("90 seconds passed in room");
             hintAudioSource = activeHazards[0].GetComponent<AudioSource>();
             if (hintAudioSource != null)
             {
